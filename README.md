@@ -4,8 +4,8 @@ Welcome to a collection of beginner-level JavaScript projects designed to help y
 
 ## What's Inside
 
-- **Weather App:** Using weather api, interactive interface using html, css and js core concepts. [Link](https://weather-api-101.netlify.app/)
-- **Web Page Enhancements:** Add interactivity and dynamic behavior to web pages.
+- **Weather App:** Using weather api, interactive interface using html, css and js core concepts. [visit](https://weather-api-101.netlify.app/)
+- **To-Do-List App:** Utilized browsers localstorage and html,css and js. [visit](https://todo-list-app-101.netlify.app)
 - **Data Manipulation:** Learn the fundamentals of data processing with JavaScript.
 - **Practice:** Challenge yourself with small coding exercises and quizzes.
 
