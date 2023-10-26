@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pop Up App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h2>Welcome to PopUpApp!</h2>
+        <button type="submit" class="btn" onclick="openPopUp()" >
+            Submit!
+        </button>
+        <div class="popup" id="popup">
+            <img src="images/checked.png" alt="check">
+            <h2>Thank You!</h2>
+            <p>Your message has been sent.</p>
+            <button type="button" closePopUp()>OK</button>
+        </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
