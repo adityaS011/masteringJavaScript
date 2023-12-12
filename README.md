@@ -6,7 +6,8 @@ Welcome to a collection of beginner-level JavaScript projects designed to help y
 
 - **Weather App:** Using weather api, interactive interface using html, css and js core concepts. [visit](https://weather-api-101.netlify.app/)
 - **To-Do-List App:** Utilized browsers localstorage and html,css and js. [visit](https://todo-list-app-101.netlify.app)
-- **Pop-Up:** Learn how to implement a pop up in your web app using JS and CSS. [visit](https://pop-up-app-101.netlify.app)
+- **Pop-Up:** Learned how to implement a pop up in your web app using JS and CSS. [visit](https://pop-up-app-101.netlify.app)
+- **Social Media Rest API:** Learned how to create a REST api . [visit](https://github.com/adityaS011/Social-Media_rest_api)
 - **Practice:** Challenge yourself with small coding exercises and quizzes.
 
 ## Getting Started
