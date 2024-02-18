@@ -41,7 +41,7 @@ console.log(`Character from code 65: ${String.fromCharCode(65)}`);
 // fromCodePoint : : Convert Unicode values to symbols like heart (0x2764), snowman(9731).
 console.log(`Character from code point 0x2764: ${String.fromCodePoint(0x2764)}  ${String.fromCodePoint(9731) }`);
 
-
+arc
 // lastIndexOf
 console.log(`Last index of "i": ${name.lastIndexOf("i")}`);
 
