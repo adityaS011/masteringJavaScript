@@ -44,3 +44,15 @@ const hero={
  hero.__proto__=user;
 
 console.log(hero.userId);
+
+// or
+
+Object.setPrototypeOf(hero, user);
+
+hero.getUsername();
+
+String.prototype.trueLen=function(){
+    console.log(`Len is ${this.trim().length}`);
+}
+
+"Aditya ".trueLen();
