@@ -50,7 +50,7 @@ console.log(hero.userId);
 Object.setPrototypeOf(hero, user);
 
 hero.getUsername();
-
+//example below
 String.prototype.trueLen=function(){
     console.log(`Len is ${this.trim().length}`);
 }
