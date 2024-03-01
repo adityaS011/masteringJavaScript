@@ -6,7 +6,7 @@ function SetUsername(username){
 }
 
 function createUser(username, email, password){
-    // SetUsername.call(username); its called but instanly removed from execution context
+    // SetUsername.call(username); its called current from execution context
     SetUsername.call(this, username); // this is used for refrence
     this.email= email;
     this.password= password;
