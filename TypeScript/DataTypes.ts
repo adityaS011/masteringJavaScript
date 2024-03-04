@@ -15,7 +15,7 @@ console.log(arr2)
 // Tuples - fixed size, elements  have specific types
 const tuple: [string, number] = ['hello', 10]
 tuple[0] = 'world'
-// tuple[1] = 'world'
+tuple[1] = 20
 
 console.log(tuple)
 
