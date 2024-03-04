@@ -1,0 +1,10 @@
+
+  input {
+    display: flex;
+    justify-content: center;
+    width: 500px; /* Set a width for the input bar */
+    padding: 20px; /* Add padding for better appearance */
+    margin:  5rem auto;
+    font-size: 2rem;
+    border: 3PX solid gray;
+  }
