@@ -39,11 +39,11 @@ function isItAny(value: any): void{
 
 // Type Assertion - tell the compiler that you know better than it does
 const someValue: unknown = 'this is a string'
-if (typeof someValue === 'string') {
-    console.log('This is a string')
-} else {
-    console.log('This is not a string')
-}
+// if (typeof someValue === 'string') {
+//     console.log('This is a string')
+// } else {
+//     console.log('This is not a string')
+// }
 
 const definitelyAString: string = <string>someValue
 // console.log(definitelyAString) 
