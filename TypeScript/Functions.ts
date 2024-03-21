@@ -21,3 +21,17 @@ function error(msg: string):never {
 };
 
 export{}
+
+
+interface User {
+    x: number
+    y:number
+}
+function logUser(user: User){
+    console.log("User logged");
+    console.log(`Coordinates are ${user.x},${user.y}`);
+}
+
+let user1: User = {x:4,y:7};
+logUser(user1);
+

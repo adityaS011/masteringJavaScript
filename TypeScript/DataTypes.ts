@@ -1,70 +1,89 @@
-// Data Types in TS
+// Data Types in TypeScript
 
-const a: number = 4 //number
-const b: string = 'Hello' //string
-let c: boolean = true //boolean
-c = false
+// Number data type
+const a: number = 4; //number
+
+// String data type
+const b: string = 'Hello'; //string
+
+// Boolean data type
+let c: boolean = true; //boolean
+c = false;
 
 // Arrays
-const arr1: number[] = [1,2,3]  
-const arr2: Array<number> = [4,5,6]    // another type to declare datatype
+// Two ways to declare arrays: using the array syntax or using the generic syntax
+const arr1: number[] = [1, 2, 3];
+const arr2: Array<number> = [4, 5, 6];
 
-console.log(arr1)
-console.log(arr2)
+console.log(arr1);
+console.log(arr2);
 
-// Tuples - fixed size, elements  have specific types
-const tuple: [string, number] = ['hello', 10]
-tuple[0] = 'world'
-tuple[1] = 20
+// Tuples
+// A tuple is a fixed-size array with elements having specific types
+const tuple: [string, number] = ['hello', 10];
+tuple[0] = 'world';
+tuple[1] = 20;
 
-console.log(tuple)
+console.log(tuple);
 
-// Enum - enumeration of named  values with explicit type
-enum Color {Red, Green, Blue}
+// Enum
+// Enum is an enumeration of named values with an explicit type
+enum Color {
+  Red,
+  Green,
+  Blue,
+}
 console.log(Color[0]);
 
+// Any data type
+// Use 'any' sparingly, as it can lead to type-safety issues
+let notSure: any = 4;
+notSure = 'maybe';
+notSure = false;
 
-// Any - can be anything, use sparingly
-let notSure: any = 4
-notSure = "maybe"
-notSure = false
-
-function isItAny(value: any): void{ 
-    if (typeof value === 'string') {
-        console.log("Any is String")
-    }
+function isItAny(value: any): void {
+  // Type checking using 'typeof'
+  if (typeof value === 'string') {
+    console.log('Any is String');
+  }
 }
 
+// Type Assertion
+// Tell the compiler that you know better than it does
+const someValue: unknown = 'this is a string';
+const definitelyAString: string = <string>someValue;
 
-
-// Type Assertion - tell the compiler that you know better than it does
-const someValue: unknown = 'this is a string'
-// if (typeof someValue === 'string') {
-//     console.log('This is a string')
-// } else {
-//     console.log('This is not a string')
-// }
-
-const definitelyAString: string = <string>someValue
-// console.log(definitelyAString) 
-
-// interfaces in typescript is a way to create your own type with object 
+// Interfaces
+// Interfaces in TypeScript are a way to create your own types with objects
 interface IUser {
-    name: string,
-    age?: number // optional property is defined by ?:
+  name: string;
+  age?: number; // Optional property is defined by '?'
 }
 
-const user: IUser = {name:'John'}
-user.age = 30
+const user: IUser = { name: 'John' };
+user.age = 30;
 
-
-
-// Type Guards - runtime type checking using interfaces or types
-function printName(user: IUser){
-    if ('age' in user) {
-        console.log(`${user.name} is ${user.age} years old`)
-    } else {
-        console.log(`Hello, ${user.name}!`)
-    }
+// Type Guards
+// Runtime type checking using interfaces or types
+function printName(user: IUser) {
+  // Using the 'in' keyword to check if the property exists in the object
+  if ('age' in user) {
+    console.log(`${user.name} is ${user.age} years old`);
+  } else {
+    console.log(`Hello, ${user.name}!`);
+  }
 }
-printName(user)
+
+printName(user);
+
+// Function with a specific parameter type
+function createUser({ name, isActive }: { name: string; isActive: boolean }) {}
+
+let newUser = { name: 'Aditya', isActive: true, email: 'aditya@gmail.com' };
+
+const user1 = createUser(newUser);
+
+// Function returning an object
+function createCourse(): { name: string; price: number } {
+  return { name: 'Aditya', price: 399 }; // Returns an object
+}
