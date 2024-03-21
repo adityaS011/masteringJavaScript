@@ -19,6 +19,5 @@ heros.forEach((hero) :void=>{
 function error(msg: string):never { 
        throw new Error(msg); 
 };
-error("This is an error");
 
 export{}
