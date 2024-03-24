@@ -11,7 +11,7 @@ const MiniContext = () => { //this would be App
         <Login />
         <Profile />
         {/* Example of using UserContext in components */}
-        <p className='text-sm text-gray-900 bg-slate-300 w-fit mx-auto p-2 m-3 rounded-lg'>
+        <div className='text-sm text-gray-900 bg-slate-300 w-fit mx-auto p-2 m-3 rounded-lg'>
     <b>Using UserContext in Login Component:</b>
     <ol>
         <li>Import the useContext hook from React and the UserContext from './Context/UserContext'.</li>
@@ -25,7 +25,7 @@ const MiniContext = () => { //this would be App
         <li>Use useContext hook to access the user object provided by UserContext.</li>
         <li>If a user is logged in (user object exists), display a welcome message with the username. Otherwise, prompt the user to log in.</li>
     </ol>
-</p>
+</div>
 
 
 
