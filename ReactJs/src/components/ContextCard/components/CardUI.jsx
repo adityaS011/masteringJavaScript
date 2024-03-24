@@ -7,13 +7,13 @@ export default function CardUI() {
             <a href="/">
                 <img className="p-8 rounded-t-lg" src="https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="product_image1" />
             </a>
-            <div className="px-5 pb-5">
+            <div className="px-5 pb-4">
                 <a href="/">
                     <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                         Apple Macbook 2050, Core Ultimate
                     </h5>
                 </a>
-                <div className="flex items-center mt-2.5 mb-5">
+                <div className="flex items-center mt-2.5 mb-4">
                     <svg
                         className="w-4 h-4 text-yellow-300 mr-1"
                         aria-hidden="true"
