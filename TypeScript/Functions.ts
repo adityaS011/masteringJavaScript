@@ -24,7 +24,7 @@ export{}
 
 
 interface User {
-    x: number
+    x: number;
     y:number
 }
 function logUser(user: User){
@@ -35,3 +35,14 @@ function logUser(user: User){
 let user1: User = {x:4,y:7};
 logUser(user1);
 
+interface user {
+    name: string;
+    age: number;
+}
+
+const User: user ={
+    name:"John Doe",
+    age:30
+}
+
+console.log(User)
